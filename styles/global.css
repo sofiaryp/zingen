@@ -33,6 +33,13 @@
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
+
+/*padding do eixo y*/
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem; 
+/*padding do eixo x*/
+  --px-lg: 1.5rem; 
 }
 
 html{
@@ -74,12 +81,18 @@ a{
 ul[role="list"]{
   list-style: none;
 }
-
-/*responsividade se a largura da tela for maior que 80em: usar esses tamanhos de fonte (desktop)*/
-@media(width >= 80em) /*80*16 = 1280 de largura */ {
+/*-------TELA MAIOR-------*/
+/*responsividade
+ se a largura da tela for maior que 80em: usar esses tamanhos de fonte (desktop)*/
+@media(width >= 80em) /*80*16 = 1280 de largura, o 16 é o tamanho de fonte padrão dos navegadores */ {
   :root{
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;
+
+    --py-base: 1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem; 
+    --px-lg: 2rem; /*padding 32px*/
   }
 }
