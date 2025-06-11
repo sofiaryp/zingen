@@ -24,7 +24,7 @@
   width: calc(100% - var(--px-lg) * 2);
   */
   margin-inline: auto;
-  border: solid 1px violet;
+  /* border: solid 1px violet; */
   
 }
 
@@ -41,10 +41,16 @@
   display: flex;
 }
 
+.items-center{
+  align-items: center;
+}
 .gap-1{
   gap: 1rem;
 }
 
+.gap-1\.5{ /*a barra faz com que o ponto seja lido como texto*/
+  gap: 1.5rem;
+}
 .grid{
   display: grid;
 }
