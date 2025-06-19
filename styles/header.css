@@ -1,7 +1,6 @@
-header{
-  & a:first-child{ /*primeiro "a"*/
+header {
+  & a:first-child {
+    /*primeiro "a"*/
     margin-right: auto;
-    
-
   }
 }

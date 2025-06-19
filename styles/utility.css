@@ -1,70 +1,71 @@
-.py-base{
+.py-base {
   padding-block: var(--py-base); /*block:define o eixo vertical*/
 }
 
-.py-lg{
-  padding-block: var(--py-lg); 
+.py-lg {
+  padding-block: var(--py-lg);
 }
 
-.py-xl{
-  padding-block: var(--py-xl); 
+.py-xl {
+  padding-block: var(--py-xl);
 }
 
-.px-lg{
+.px-lg {
   padding-inline: var(--px-lg); /*inline:define o eixo horizontal*/
 }
 
-.container{
+.container {
   --max-width: 375px;
 
   /*padding 24px*/
-  width: min(var(--max-width), 100% - var(--px-lg)*2); 
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
   /* ou:
   max-width: var(--max-width);
   width: calc(100% - var(--px-lg) * 2);
   */
   margin-inline: auto;
   /* border: solid 1px violet; */
-  
 }
 
-.desktop-only{
+.desktop-only {
   display: none; /*tudo primeiro para o mobile (mobile first)*/
 }
 
-.even-columns{ /*coluna constantes*/
+.even-columns {
+  /*coluna constantes*/
   display: grid;
   gap: 1rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
-.gap-1{
+.gap-1 {
   gap: 1rem;
 }
 
-.gap-1\.5{ /*a barra faz com que o ponto seja lido como texto*/
+.gap-1\.5 {
+  /*a barra faz com que o ponto seja lido como texto*/
   gap: 1.5rem;
 }
-.grid{
+.grid {
   display: grid;
 }
 
-@media (width >= 80em){
-  .container{
+@media (width >= 80em) {
+  .container {
     --max-width: 80rem;
   }
   /*Quando tiver no desktop:*/
-  .desktop-only{
+  .desktop-only {
     display: initial;
   }
 
-  .even-columns{
+  .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }

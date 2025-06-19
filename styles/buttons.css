@@ -1,4 +1,4 @@
-.btn{
+.btn {
   --btn-bg-color: var(--text-color-primary);
   --btn-color: var(--bg-color);
   border: 0;
@@ -9,9 +9,9 @@
   justify-content: center;
   width: fit-content;
 
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
-  font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
 
   cursor: pointer;
 
@@ -19,7 +19,7 @@
   color: var(--btn-color);
 }
 
-.btn:hover{
+.btn:hover {
   --btn-bg-color: linear-gradient(
     90deg,
     var(--brand-color-secondary) 0%,
@@ -32,30 +32,30 @@
   color: var(--btn-color);
 }
 
-.btn-sm{
-  padding: .5rem 1rem;
+.btn-sm {
+  padding: 0.5rem 1rem;
   font-size: var(--fs-sm);
 }
-.btn-md{
-  padding: .75rem 1.5rem;
+.btn-md {
+  padding: 0.75rem 1.5rem;
   font-size: var(--fs-base);
 }
-.btn-lg{
+.btn-lg {
   padding: 1rem 2rem;
   font-size: 1.125rem;
 }
 
-.btn[aria-label]{
+.btn[aria-label] {
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     border-radius: inherit; /*borda herdada definida em cima*/
-    inset: .09375rem; /*inset 0: todo o botão vai ter essa cor*/
+    inset: 0.09375rem; /*inset 0: todo o botão vai ter essa cor*/
     background-color: var(--bg-color);
   }
-  &::after{
+  &::after {
     content: attr(aria-label); /*pega um atributo no caos o aria label*/
     background: var(--btn-bg-color);
     -webkit-background-clip: text; /*recorte conforme o texto*/
@@ -65,13 +65,13 @@
   }
 }
 
-@media(width >= 80em){
-  .btn-sm{
-  padding: .75rem 1.5rem;
-  font-size: var(--fs-base);
+@media (width >= 80em) {
+  .btn-sm {
+    padding: 0.75rem 1.5rem;
+    font-size: var(--fs-base);
   }
-  .btn-md{
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
+  .btn-md {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
   }
 }
