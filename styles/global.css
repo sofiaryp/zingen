@@ -94,6 +94,13 @@ a:hover{
 ul[role="list"]{
   list-style: none;
 }
+
+img{
+    max-width: 100%;
+    display: inline-block;
+  }
+
+
 /*-------TELA MAIOR-------*/
 /*responsividade
  se a largura da tela for maior que 80em: usar esses tamanhos de fonte (desktop)*/
