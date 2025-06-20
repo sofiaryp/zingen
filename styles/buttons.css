@@ -52,7 +52,7 @@
     content: "";
     position: absolute;
     border-radius: inherit; /*borda herdada definida em cima*/
-    inset: 0.09375rem; /*inset 0: todo o botão vai ter essa cor*/
+    inset: 1px;
     background-color: var(--bg-color);
   }
   &::after {
