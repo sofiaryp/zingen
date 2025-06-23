@@ -47,9 +47,11 @@ html{
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
   line-height: 1.6;
-  color: var(--text-color-primary);
+  color: var(--text-color-secondary);
 
   overflow-x: hidden; /*não tem rolagem no eixo horizontal*/
+
+  scroll-behavior: smooth; /*rolagem suave nos links*/
 }
 
 body{

@@ -22,6 +22,7 @@
     display: block;
     padding-block: 1.5rem; /*em cima e embaixo*/
     font: var(--fw-bold) var(--fs-price) / 1.2 var(--ff-sans);
+    color: var(--text-color-primary);
   }
 
   & zin-pricing small {
